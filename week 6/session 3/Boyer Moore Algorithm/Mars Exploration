@@ -1,0 +1,21 @@
+import java.util.*;
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.next();
+        System.out.println(countAltered(s));
+        sc.close();
+    }
+
+    private static int countAltered(String s) {
+        String pattern = "SOS";
+        int count = 0;
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) != pattern.charAt(i % 3)) {
+                count++;
+            }
+        }
+        return count;
+    }
+}
