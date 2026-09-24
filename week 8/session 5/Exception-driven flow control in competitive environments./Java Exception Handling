@@ -1,0 +1,16 @@
+import java.util.*;
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        try {
+            int B = sc.nextInt();
+            int A = sc.nextInt();
+
+            System.out.println(B / A);
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+    }
+}
